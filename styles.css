@@ -1,0 +1,199 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: 1080 1920;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+
+button {
+    background-color: #1d4e89;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #00587a;
+}
+
+#searchInput {
+    width: 70%;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+
+#error-message {
+    color: red;
+    font-style: italic;
+    display: none;
+}
+
+#searchResults {
+    padding: 1em;
+    text-align: center;
+}
+
+#medicineDetails {
+    padding: 1em;
+    text-align: center;
+    color: #000000;
+    background-color: #00577a18;
+    text-shadow: 20px solid black;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-item {
+    cursor: pointer;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    background-color: #f2f2f2;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.result-item:hover {
+    background-color: #aab4aa;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #af4c4c;
+}
+
+#healthAssistantSection {
+    padding: 1em;
+    text-align: center;
+}
+
+/* CHAT BOT STYLES */
+
+#chat-window {
+    width: 700px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #1d4e89;
+    padding-bottom: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+
+#chat-messages {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #180c0c;
+    height: 250px;
+    background-color: #00b2ca9d;
+    overflow: auto;
+}
+
+#chat-form {
+    display: flex;
+    align-items: center;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #674188;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.bot-message {
+    font-family: "Roboto", sans-serif;
+    background-color: #fffbf5;
+    text-align: justify;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+.user-message {
+    font-family: "Nunito", sans-serif;
+    background-color: #f7efe5;
+    text-align: left;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+.user-message img,
+.bot-message img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+    #chat-window {
+        width: 90%;
+    }
+}
+
+#main-title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #fffbf5;
+    font-style: italic;
+    
+    
+}
+
+#chat-messages {
+    margin-top: -0px;
+    margin-left: -1px;
+    height: 300px;
+    width: 680px;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+
+.bot-message img {
+    width: 60px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    margin-right: 20px;
+}

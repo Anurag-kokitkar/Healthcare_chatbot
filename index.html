@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthcare Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="healthAssistantSection">
+    <div class="mainWindow">
+      <div id="chat-window">
+        <div id="main-title">
+          <h2><center><strong>Health Care</strong></center></h2>
+        </div>
+        <div id="chat-messages"></div>
+        <form id="chat-form">
+          <input type="text" id="chat-input" autocomplete="off" placeholder="Enter medicine name or health question..." required />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
